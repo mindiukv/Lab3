@@ -1,0 +1,379 @@
+
+body {
+	background-color: rgb(220, 218, 218);
+    font-family: sans-serif;
+}
+
+.main {
+	display: flex;
+	align-items: start;
+    margin: 0px auto;
+	padding-top: 5px;
+	width: 1400px;
+}
+
+.leftBlock, .rightBlock {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.leftBlock {
+	margin-right: 25px;
+	width: 70%;
+}
+
+.rightBlock {
+	margin-left: 25px;
+	width: 30%;
+}
+
+hr {
+	width: 100%;
+}
+
+.item {
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.addProduct {
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	flex: 1;
+}
+
+.addProduct input {
+	width: 81%;
+	height: 30px;
+	padding: 8px;
+	border-radius: 5px 0px 0px 5px;
+	border-width: thin;
+}
+
+::placeholder {
+	font-size: medium;
+}
+
+.addProduct button {
+	width: 19%;
+	height: 47.34px;
+	position: relative;
+	border-radius: 0px 5px 5px 0px;
+	border-width: 0px;
+	border-bottom: 4px solid rgb(49, 94, 198);
+	background-color: rgb(56, 117, 197);
+	color: white;
+	font-size: 17px;
+}
+
+
+
+.name {
+	width: 120px;
+	height: 30px;
+	border: none; 
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 20px;
+}
+
+.name:focus {
+	outline-color: rgb(92, 147, 203);
+}
+
+.add {
+	display: flex;
+}
+
+.amount {
+	padding: 8px;
+	margin: 2px;
+	width: 20px;
+	height: 20px;
+	background-color:  rgb(226, 223, 223);
+	border-radius: 5px;
+	text-align: center;
+	color:rgb(100, 109, 124);
+}
+
+.increaseButton, .decreaseButton {
+	margin: 2px;
+	height: 40px;
+	width: 40px;
+	border-width: 0px;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	font-size: medium;
+	
+}
+
+.increaseButton {
+	background-color: rgb(30, 193, 49);
+	border-bottom: 5px solid rgb(56, 161, 33);
+}
+
+.decreaseButton {
+	background-color: rgb(208, 62, 62);
+	border-bottom: 5px solid rgb(179, 37, 37);
+}
+
+
+.purchase {
+	display: flex;
+	width: 170px;
+	justify-content: end;
+}
+
+.state {
+	height: 36px;
+	width: 130px;
+	font-size: 16px;
+	border-radius: 5px;
+	border-width: 0px;
+	border-bottom: 4px solid rgb(204, 202, 202);
+	background-color: rgb(226, 223, 223);
+	color: rgb(85, 92, 104);
+}
+
+
+
+
+.deleteButton {
+	margin-left: 5px;
+	width: 36px;
+	height: 36px;
+	border-radius: 5px;
+	background-color: rgb(208, 62, 62);
+	border-width: 0px;
+	border-bottom: 5px solid rgb(179, 37, 37);
+	color: white;
+	font-size: medium;
+
+}
+
+
+.rightBlock section {
+	display: flex;
+	margin: 5px 7px;
+	padding: 10px;
+}
+
+.purchased, .not-purchased {
+	flex-wrap: wrap;
+	min-height: 45px;
+}
+
+.label {
+	font-size: 25px;
+}
+
+.product {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	font-size: 13px;
+	margin: 3px;
+	padding: 7px;
+	border-radius: 5px;
+	color: rgb(85, 92, 104);
+	background-color:rgb(226, 223, 223);
+}
+
+.number {
+	justify-content: center;
+	padding: 5px;
+	height: 15px;
+	width: 15px;
+	margin-left: 3px;
+	border-radius: 50%;
+	background-color: rgb(244, 159, 12);
+	text-align: center;
+	color: white;
+}
+
+.decreaseButton, .increaseButton, .addProduct button, .amount, .state, .deleteButton, .label, .product{
+  	font-weight: bold;
+}
+
+.state, .deleteButton{
+    font-size: 14px;
+}
+
+.amount, .decreaseButton, .increaseButton{
+    font-size: medium;
+}
+
+.addProduct button{
+    font-size: 18px;
+}
+
+.badge {
+	padding: 10px;
+	width: 150px;
+	height: 78px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-color: #b102dd;
+	font-family: sans-serif;
+	color: white;
+	position: fixed;
+	bottom: -50px;
+	left: 50px;
+	z-index: 3;
+	transition: 2s;
+}
+
+.badge:hover {
+	background-color: #4a12b4;
+	bottom: 0px;
+}
+
+.badge::before {
+	display: block;
+	content: "Buy list";
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.createdBy {
+	display: block;
+	margin-top: 18px;
+	font-size: 16px;
+}
+
+.author {
+	display: block;
+	font-size: 18px;
+}
+
+button {
+	position: relative;
+}
+
+button::before {
+	padding: 0px 10px;
+	height: 1px;
+	border-radius: 10px;
+	content:attr(data-tooltip);
+	font-size: 12px;
+	background-color: #b102dd;
+	color: white;
+	transition: all 1s ease-out;
+	position: absolute;
+	top: -20%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.state::before {
+	width: 108px;
+	transform: translateX(-27%);
+}
+
+.tooltip::before {
+    width: 108px;
+	transform: translateX(-19%);
+}
+
+.deleteButton::before {
+	width: 100px;
+	transform: translateX(-50%);
+}
+
+
+.increaseButton::before,
+.decreaseButton::before {
+  content: attr(data-tooltip);
+  width: 100px;
+  text-align: center;
+  transform: translateX(-38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.increaseButton:hover::before, .decreaseButton:hover::before {
+	top: -115%;
+}
+
+.addProduct button:hover::before {
+	top: -95%;
+}
+
+.addPoduct button::before {
+	width: 100px;
+	transform: translateX(-29%);
+}
+
+button:hover::before{
+	height: 15px;
+	padding: 10px;
+	visibility: visible;
+	opacity: 1;
+	top: -135%;
+}
+
+
+@media (max-width:1400px){
+	.main {
+		margin: 0px;
+		width: 100%;
+	}
+
+	.rightBlock {
+		margin-left: 1vw;
+	}
+
+	.leftBlock {
+		margin-right: 1vw;
+	}
+}
+
+@media (max-width:690px){
+    .main {
+        flex-direction: column;
+    }
+
+    .leftBlock, .rightBlock {
+        width: 96vw;
+        margin: 15px;
+    }
+}
+
+@media (max-width:470px){
+    .main, .leftBlock, .rightBlock {
+        width: 480px;
+    }
+    .addProduct button{
+        width:30%;
+    }
+}
+
+@media print{
+	* {
+		-webkit-print-color-adjust: exact;
+	}
+    .badge::before{
+        content: "";
+    }
+
+    .badge {
+        border: 1px solid #b102dd;
+        background-color: white;
+        color: black;
+        bottom: 0px;
+    }
+}
